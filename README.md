@@ -36,7 +36,11 @@ ionic cordova build ios/android
 <h3>
   <a href="https://blog.csdn.net/xiaozhi_2016/article/details/75103357
 ">ionic应用在mac上使用xcode7.0进行iphone真机调试</a>
+</h3>
+<h3>
   <a href="https://www.cnblogs.com/final-elysion/p/6091600.html">ionic ios项目真机运行-不用开发者账号</a>
+</h3>
+<h3>
   <a href="https://www.jianshu.com/p/011eb4b6f068">iOS ionic实时调试（含真机）</a>
 </h3>
 
@@ -44,6 +48,5 @@ ionic cordova build ios/android
 
 <p>
   <img width="375" height="auto" src="./src/assets/imgs/demo1.jpg">
-  <img width="375" height="auto" src="./src/assets/imgs/demo2.jpg">
 </p>
 
