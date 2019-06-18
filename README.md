@@ -19,7 +19,7 @@ npm install
 # serve with hot reload at localhost:8100
 ionic serve
 
-# 调试 
+# debug 
 ionic cordova platform add ios/android
 
 
