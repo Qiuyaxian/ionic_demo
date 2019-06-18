@@ -1,0 +1,48 @@
+<!--
+  Generated template for the DiscoveryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>发现</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content 
+      pullingIcon="arrow-down" 
+      pullingText="下拉刷新" 
+      refreshingSpinner="circles" 
+      refreshingText="数据加载中..."
+    >
+      
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let f of questions" (click)="gotoDetails(f.IdentityId)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="{{ f.HeadFace }}" />
+      </ion-avatar>
+      <p>
+        {{ f.UserNickName }}回答了问题
+        <ion-icon name="more" class="more_botton"></ion-icon>
+      </p>
+    </ion-item>
+    <h2>{{ f.ContentTitle }}</h2>
+    <ion-card-content>
+      <p>{{ f.ContentSummary }}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col col-8 center text-left>
+          <ion-note> {{ f.LikeCount }}&nbsp;赞同&nbsp;&nbsp;·&nbsp;&nbsp;{{ f.CommentCount }}&nbsp;&nbsp;评论&nbsp;&nbsp;·&nbsp;&nbsp;关注问题</ion-note>
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

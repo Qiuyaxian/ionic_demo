@@ -1,0 +1,7 @@
+<!-- Generated template for the QuestionListComponent component -->
+<ion-list>
+  <ion-item *ngFor="let question of questions" (click)="gotoDetails(question.IdentityId)">
+    <h2>{{ question.ContentTitle }}</h2>
+    <p>{{ question.ContentSummary }}</p>
+  </ion-item>
+</ion-list>

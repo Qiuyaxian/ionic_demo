@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "no-duplicate-variable": true,
+    "no-unused-variable": [
+      false
+    ]//关闭变量是否使用检查
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}
